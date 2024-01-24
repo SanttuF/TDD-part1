@@ -29,7 +29,7 @@ function createApp(database) {
       return undefined
     }
 
-      return new Date(dateString);
+    return new Date(dateString);
 
   }
 
