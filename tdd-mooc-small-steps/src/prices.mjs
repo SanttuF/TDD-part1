@@ -9,6 +9,10 @@ function createApp(database) {
   const app = express();
 
 
+
+
+
+  
   app.put("/prices", (req, res) => {
     const type = req.query.type;
     const cost = parseInt(req.query.cost);
