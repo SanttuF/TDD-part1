@@ -7,7 +7,7 @@ import express from "express";
 function createApp(database) {
   const app = express();
 
-  Date(undefined)
+  console.log(Date(undefined))
 
   app.put("/prices", (req, res) => {
     const type = req.query.type;
