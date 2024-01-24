@@ -88,7 +88,7 @@ function createApp(database) {
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
       let h = Temporal.PlainDate.from(row.holiday)
-      console.log(date.getFullYear() === h.year)
+      console.log(date.getMonth() === h.month)
       if (
         date.getFullYear() === h.year &&
         date.getMonth() === holiday.getMonth() &&
