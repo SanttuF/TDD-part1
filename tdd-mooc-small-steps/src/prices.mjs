@@ -7,7 +7,6 @@ import { Temporal } from "@js-temporal/polyfill";
 
 function createApp(database) {
   const app = express();
-
   
   app.put("/prices", (req, res) => {
     const type = req.query.type;
