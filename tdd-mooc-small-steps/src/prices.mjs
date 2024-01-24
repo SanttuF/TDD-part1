@@ -7,6 +7,8 @@ import express from "express";
 function createApp(database) {
   const app = express();
 
+  Date(undefined)
+
   app.put("/prices", (req, res) => {
     const type = req.query.type;
     const cost = parseInt(req.query.cost);
