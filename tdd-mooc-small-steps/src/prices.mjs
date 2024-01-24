@@ -28,7 +28,7 @@ function createApp(database) {
     if (dateString === undefined) {
       return undefined
     }
-
+    const date = Temporal.PlainDate.from(dateString)
     return new Date(dateString);
 
   }
